@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-Barlow: "Barlow", sans-serif, serif;
+  --font-BarlowCondensed: "Barlow Condensed", serif;
+  --font-Bellefair: "Bellefair", serif;
+  --shadow-ExploreBtn: 0px 0px 0px 60px hsla(360 100% 100% / 0.5);
+}
+.navbar > li {
+  @apply py-1.5 sm:py-6 px-1.5 hover:border-b-2 hover:border-gray-500;
+}
+.active {
+  @apply border-b-2 !border-b-white;
+}
+
+.navbar > li > a > span {
+  @apply sm:text-base md:text-lg font-bold  text-white whitespace-nowrap cursor-pointer block transform hover:scale-110 duration-300;
+}
+
+a > span > span {
+  @apply font-normal;
+}
+
+button {
+  /* background-image: url("assets/shared/icon-close.svg"); */
+  /* width: 3rem; */
+}
+button[data-visible="true"] {
+  transform: translate(0%) !important;
+}
+
+.sections-header {
+  @apply text-[1.6rem] uppercase tracking-[0.25rem]  font-BarlowCondensed;
+}
+.sections-header span {
+  @apply text-gray-600 font-semibold mr-2;
+}
+
+.planets-nav.active {
+  @apply border-b border-b-white;
+}
+.planets-nav > li {
+  @apply cursor-pointer;
+}
+
+.slider > button {
+  @apply aspect-[1] w-4 bg-gray-600  rounded-full cursor-pointer;
+}
+
+.slider > button.active {
+  @apply !bg-white;
+}
+
+.technology > div {
+  @apply hover:bg-gray-700 cursor-pointer;
+}
+
+.technology > div.active {
+  @apply bg-white text-gray-800;
+}
