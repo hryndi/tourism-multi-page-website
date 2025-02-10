@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import RocketImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import RocketImgMobi from "../assets/technology/image-launch-vehicle-landscape.jpg";
 import SpacePortImg from "../assets/technology/image-spaceport-portrait.jpg";
@@ -48,10 +48,10 @@ const Technology = () => {
     const crewHandler = () => {
       switch (currTechnology) {
         case "launch-vehicle":
-          setTechnologyInfo((prev) => defaultObject);
+          setTechnologyInfo(() => defaultObject);
           return;
         case "spaceport":
-          setTechnologyInfo((prev) => ({
+          setTechnologyInfo(() => ({
             nameTech: "Spaceport",
             techDesc:
               "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
@@ -60,7 +60,7 @@ const Technology = () => {
 
           return;
         case "space-capsule":
-          setTechnologyInfo((prev) => ({
+          setTechnologyInfo(() => ({
             nameTech: "Space capsule",
             techDesc:
               "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",

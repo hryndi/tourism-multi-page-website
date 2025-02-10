@@ -1,9 +1,7 @@
 /// <reference types="vite-plugin-svgr/client" />
 // import Logo from "../assets/shared/logo.svg?react";
 import Logo from "../assets/shared/logo.svg";
-import CloseIcon from "../assets/shared/icon-hamburger.svg";
 import { useState } from "react";
-import Destination from "../destination/Destination";
 
 const Navbar = ({
   pageSetter,
