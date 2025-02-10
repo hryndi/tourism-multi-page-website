@@ -1,4 +1,4 @@
-/// <reference types="vite-plugin-svgr/client" />
+// / <reference types="vite-plugin-svgr/client" />
 // import Logo from "../assets/shared/logo.svg?react";
 import Logo from "../assets/shared/logo.svg";
 import { useState } from "react";
@@ -12,17 +12,10 @@ const Navbar = ({
 }) => {
   const [navToggle, setNavtoggle] = useState("false");
   const currNavIcon =
-    navToggle === "false"
-      ? `bg-[url("assets/shared/icon-hamburger.svg")]`
-      : `bg-[url("assets/shared/icon-close.svg")]`;
-  const translateXNav =
-    navToggle === "false"
-      ? "max-sm:translate-x-[100%]"
-      : "max-sm:translate-x-[0%]";
+    navToggle === "false" ? `bg-[url("assets/shared/icon-hamburger.svg")]` : `bg-[url("assets/shared/icon-close.svg")]`;
+  const translateXNav = navToggle === "false" ? "max-sm:translate-x-[100%]" : "max-sm:translate-x-[0%]";
 
-  const isCurrPageActive = (
-    page: "home" | "destinations" | "crew" | "technology"
-  ) => {
+  const isCurrPageActive = (page: "home" | "destinations" | "crew" | "technology") => {
     console.log(currPage + " " + page);
     if (currPage === page) {
       return "active";
