@@ -28,10 +28,10 @@ const Crew = () => {
     const crewHandler = () => {
       switch (currCrewMember) {
         case "douglas-hurley":
-          setCrewInfo((prev) => defaultObject);
+          setCrewInfo(() => defaultObject);
           return;
         case "mark-shuttleworth":
-          setCrewInfo((prev) => ({
+          setCrewInfo(() => ({
             position: "Mission Specialist",
             crewName: "Mark Shuttleworth",
             crewDesc:
@@ -41,7 +41,7 @@ const Crew = () => {
 
           return;
         case "victor-glover":
-          setCrewInfo((prev) => ({
+          setCrewInfo(() => ({
             position: "Pilot",
             crewName: "Victor Glover",
             crewDesc:
@@ -50,7 +50,7 @@ const Crew = () => {
           }));
           return;
         case "anousheh-ansari":
-          setCrewInfo((prev) => ({
+          setCrewInfo(() => ({
             position: "Flight Engineer",
             crewName: "Anousheh Ansari",
             crewDesc:
