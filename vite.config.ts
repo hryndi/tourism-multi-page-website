@@ -14,5 +14,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/space-tourism-multi-page/",
+  base: "/tourism-multi-page-website/",
 });
