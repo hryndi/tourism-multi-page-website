@@ -14,4 +14,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/space-tourism-multi-page/",
 });
